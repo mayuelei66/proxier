@@ -1,0 +1,42 @@
+{
+  "name": "proxier",
+  "version": "0.0.1",
+  "description": "a GUI proxy inspector in Electron",
+  "main": "main.js",
+  "pre-commit": [
+    "test",
+    "lint"
+  ],
+  "scripts": {
+    "test": "ava test/**",
+    "dev": "electron .",
+    "lint": "eslint lib/**",
+    "build": "electron-packager . --out=dist --asar --voerwrite --all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayuelei66/proxier.git"
+  },
+  "keywords": [
+    "proxy",
+    "electron",
+    "javascript"
+  ],
+  "author": "mayuelei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mayuelei66/proxier/issues"
+  },
+  "homepage": "https://github.com/mayuelei66/proxier#readme",
+  "dependencies": {
+    "ava": "^0.19.1",
+    "electron": "^1.6.8",
+    "electron-packager": "^8.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "pre-commit": "^1.2.2"
+  }
+}
